@@ -12,6 +12,8 @@ Right now the Dockerfile is cloneing my fork of OpenDevin due to the maker file 
 ### Windows
 Use **run_opendevin.ps1**
 
+Windows is currently having networking issues. 3001 doesn't seem to be reachable and looking for a solution.
+
 ### Linux/MacOS
 Use **run_opendevin.sh**
 

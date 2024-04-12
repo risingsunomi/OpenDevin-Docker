@@ -22,12 +22,14 @@ RUN apt-get update --fix-missing && \
     unzip \
     zip \
     build-essential \
-    netcat
+    netcat \
+    lsof
 
 # install Python3.11
 RUN add-apt-repository ppa:deadsnakes/ppa && \
     apt-get update --fix-missing && \
-    apt-get install -y python3.11
+    apt-get install -y python3.11 \
+    python3-pip
 
 # install node LTS
 RUN curl -sL https://deb.nodesource.com/setup_lts.x | bash - && \
