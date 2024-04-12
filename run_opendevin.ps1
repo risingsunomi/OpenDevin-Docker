@@ -48,6 +48,6 @@ if (Test-Path -Path "config.toml") {
 
 # Run the OpenDevin container with the generated config.toml
 Write-Host "Starting OpenDevin docker..."
-docker run -p 3000:3000 -v ${PWD}/config.toml:/app/OpenDevin/config.toml opendevin
+docker run -p 3001:3001 -v ${PWD}/config.toml:/app/OpenDevin/config.toml opendevin
 
-Write-Host "OpenDevin is running. You can access it at http://localhost:3000"
+Write-Host "OpenDevin is running. You can access it at http://localhost:3001"
