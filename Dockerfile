@@ -50,7 +50,7 @@ RUN make build-nodocker
 RUN make setup-config
 
 # Expose the port on which the application will run
-EXPOSE 3000
+EXPOSE 3001
 
 # Start the docker, backend and frontend
 CMD make run
