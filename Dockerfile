@@ -38,6 +38,9 @@ RUN curl -sL https://deb.nodesource.com/setup_lts.x | bash - && \
 # install poetry
 RUN curl -sSL https://install.python-poetry.org | python3 -
 
+# install docker client
+RUN apt-get install docker.io -y
+
 # Set the working directory in the container
 WORKDIR /app
 

@@ -46,4 +46,4 @@ fi
 
 # Run the OpenDevin container with the generated config.toml
 echo "Starting OpenDevin docker..."
-docker run -p 3001:3001 -v $(pwd)/config.toml:/app/OpenDevin/config.toml opendevin
+docker run -p 3001:3001 -v $(pwd)/config.toml:/app/OpenDevin/config.toml -v /var/run/docker.sock:/var/run/docker.sock opendevin
