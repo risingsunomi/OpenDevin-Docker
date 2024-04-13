@@ -45,7 +45,7 @@ RUN apt-get install docker.io -y
 WORKDIR /app
 
 # Clone the OpenDevin repository in the /app directory
-RUN git clone --branch docker_fixes_04122024 https://github.com/risingsunomi/OpenDevin.git
+RUN git clone --branch docker_dev https://github.com/risingsunomi/OpenDevin.git
 WORKDIR /app/OpenDevin
 
 # Build the frontend and backend
