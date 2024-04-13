@@ -6,7 +6,7 @@ docker pull ghcr.io/opendevin/sandbox
 
 # Build the OpenDevin image
 echo "Building OpenDevin docker..."
-docker build -t opendevin .
+docker build --no-cache -t opendevin .
 
 if [ -f "config.toml" ]; then
   echo "Using existing config.toml file."
