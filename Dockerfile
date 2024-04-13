@@ -42,7 +42,7 @@ RUN curl -sSL https://install.python-poetry.org | python3 -
 WORKDIR /app
 
 # Clone the OpenDevin repository in the /app directory
-RUN git clone --branch docker_makefile_04122024 https://github.com/risingsunomi/OpenDevin.git
+RUN git clone --branch docker_fixes_04122024 https://github.com/risingsunomi/OpenDevin.git
 WORKDIR /app/OpenDevin
 
 # Build the frontend and backend

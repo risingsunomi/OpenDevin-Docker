@@ -47,5 +47,3 @@ fi
 # Run the OpenDevin container with the generated config.toml
 echo "Starting OpenDevin docker..."
 docker run -p 3001:3001 -v $(pwd)/config.toml:/app/OpenDevin/config.toml opendevin
-
-echo "OpenDevin is running. You can access it at http://localhost:3001"
